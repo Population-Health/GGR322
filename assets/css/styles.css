@@ -1,1 +1,187 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colour and typography */
+:root {
+  --text: #111;
+  --muted: #4660c6;
+  --subtle: #666;
+  --border: #e6e6e6;
+  --bg: #f8f8f8;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Header and nav */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--subtle);
+  margin-bottom: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Cards and sections */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card p + p {
+  margin-top: 0.5rem;
+}
+
+.highlight {
+  border-left: 4px solid var(--muted);
+}
+
+/* Theme list */
+.theme-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.theme-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  background: var(--muted);
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Portfolio grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.project-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-info {
+  padding: 0.75rem 0.9rem 1rem;
+}
+
+.project-info h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-info p {
+  color: var(--subtle);
+  font-size: 0.9rem;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Student page map */
+.full-map {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.student-name {
+  font-weight: 600;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  color: var(--subtle);
+}
 

@@ -187,14 +187,13 @@ body {
 .banner-wrapper {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .banner-image {
   width: 100%;
-  max-width: 1000px;
-  display: block;
-  margin: 0 auto;
+  max-width: 650px;   /* reduce from 1000 to 650 */
+  height: auto;
   border-radius: 10px;
   border: 1px solid var(--border);
 }
-

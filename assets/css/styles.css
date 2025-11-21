@@ -184,4 +184,17 @@ body {
   font-size: 0.9rem;
   color: var(--subtle);
 }
+.banner-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
 

@@ -195,3 +195,7 @@ body {
   border-radius: 10px;
   border: 1px solid var(--border);
 }
+.banner-wrapper {
+  display: flex;
+  justify-content: flex-start; 
+}

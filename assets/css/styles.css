@@ -199,3 +199,9 @@ body {
   display: flex;
   justify-content: flex-start; 
 }
+
+.section-highlight {
+  border-left: 4px solid #2563eb;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
